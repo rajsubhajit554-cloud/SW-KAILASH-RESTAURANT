@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    KAILASH RESTAURANT — Premium Modern Theme
    ============================================================ */
 
@@ -2990,7 +2990,7 @@ footer p {
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    padding: 8px 6px 18px;
+    padding: 8px 6px 12px;
     width: 100%;
     cursor: grab;
     scrollbar-width: thin;
@@ -3026,7 +3026,7 @@ footer p {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    padding: 12px;
+    padding: 9px 9px 7px 9px;
     text-align: center;
     box-shadow: 0 6px 22px rgba(0, 0, 0, 0.07) !important;
     backdrop-filter: blur(12px);
@@ -3096,7 +3096,7 @@ footer p {
     aspect-ratio: 1 / 1;
     border-radius: 12px;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border: 1px solid var(--glass-border) !important;
     background: var(--bg-dark) !important;
     position: relative;
@@ -3115,53 +3115,91 @@ footer p {
     transform: scale(1.08);
 }
 
+.food-card-img-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(201, 162, 75, 0.08), rgba(201, 162, 75, 0.02));
+    color: var(--accent-gold);
+    font-size: 2.2rem;
+    transition: all 0.4s ease;
+}
+
+.food-menu-card:hover .food-card-img-placeholder {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, rgba(201, 162, 75, 0.15), rgba(201, 162, 75, 0.05));
+    color: var(--accent-amber, #e6b800);
+}
+
 .food-card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex: 1;
-    gap: 4px;
+    gap: 1px;
 }
 
 .food-title {
-    font-size: 0.98rem;
+    font-size: 0.86rem;
     font-weight: 700;
     color: var(--text-primary) !important;
-    line-height: 1.25;
+    line-height: 1.2;
+    margin: 0;
     font-family: 'Outfit', 'Inter', sans-serif;
+    min-height: 2.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-break: break-word;
 }
 
 .bengali-title {
-    font-size: 0.8rem;
+    font-size: 0.73rem;
     color: var(--accent-gold) !important;
     font-weight: 600;
-    margin-bottom: 3px;
-    display: block;
+    margin: 0;
+    line-height: 1.2;
+    min-height: 2.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-break: break-word;
 }
 
 .food-price {
-    font-size: 1.1rem;
+    font-size: 0.96rem;
     font-weight: 800;
     color: var(--accent-red, #c0392b) !important;
-    margin-bottom: 6px;
+    margin: 1px 0 4px 0;
+    line-height: 1.2;
+    min-height: 1.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
 }
 
 .food-order-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 4px;
     background: linear-gradient(135deg, #25D366, #128C7E) !important;
     color: #ffffff !important;
     text-decoration: none;
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     font-weight: 700;
-    padding: 7px 12px;
-    border-radius: 8px;
+    padding: 5px 8px;
+    border-radius: 7px;
     width: 100%;
+    margin-top: 2px;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(37, 211, 102, 0.25);
+    box-shadow: 0 2px 6px rgba(37, 211, 102, 0.25);
 }
 
 .food-order-btn:hover {
@@ -3530,7 +3568,7 @@ footer p {
     background: var(--bg-card, rgba(22, 22, 22, 0.85)) !important;
     border: 1.5px solid var(--glass-border, rgba(201, 162, 75, 0.22)) !important;
     border-radius: 18px;
-    padding: 12px;
+    padding: 9px 9px 7px 9px;
     display: flex;
     flex-direction: column;
     position: relative;
